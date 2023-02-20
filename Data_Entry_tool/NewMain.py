@@ -136,6 +136,7 @@ def ExecuteOperation():
 
 
 '''
+This is a sample how config variable looks
 config = {
     "host": "192.168.1.5",
     "port": 3306,
@@ -151,6 +152,8 @@ config = {
 
 if __name__ == '__main__':
     # This below block deals with the reading of the text file config.txt
+    # This config.txt is responsible for authorizing the connection with the Mysql server. 
+    # Change the config.txt according to your connection details
     config = {}
     with open(r'config.txt') as f:
         d = f.readlines()
